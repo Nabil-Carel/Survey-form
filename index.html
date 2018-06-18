@@ -26,23 +26,23 @@
 
                 <div class="input-group mb-3">
                     <label id="name-label">*Name: &nbsp;</label>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter your name" id="name" required>
+                    <input type="text" id="name" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter your name" required>
                 </div>
 
                 <div class="input-group mb-3">
                     <label id="email-label">*Email: &nbsp;</label>
-                    <input type="email" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter your email" required>
+                    <input type="email" class="form-control" id="email" aria-describedby="basic-addon3" placeholder="Enter your email" required>
                 </div>
 
                 <div class="input-group mb-3">
                     <label id="number-label">Age: &nbsp;</label>
-                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Enter your age" max="100" min="0" required>
+                    <input type="number" class="form-control" id="number" aria-describedby="basic-addon3" placeholder="Enter your age" max="100" min="0" required>
                 </div>
 
 
             </div>
 
-            <div>
+            <div class="input-group">
                 <label>Which option best describes your current role? &nbsp;</label>
                 <select class="form-control" id="dropdown">
                         <optgroup label = "Select an option">
@@ -54,26 +54,27 @@
                         </optgroup>
                         
                     </select>
-                <br>
+
             </div>
 
             <div>
+                <br>
                 <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
-                <div class="form-check">
+                <div class="form-check" name "button definitely">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked lass="sr-only" required>
                     <label class="form-check-label" for="exampleRadios1">
                             Definitely
                         </label>
                 </div>
 
-                <div class="form-check">
+                <div class="form-check" name="button-maybe">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" lass="sr-only" required>
                     <label class="form-check-label" for="exampleRadios1">
                                 Maybe
                             </label>
                 </div>
 
-                <div class="form-check">
+                <div class="form-check" name="button-not-sure">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" lass="sr-only" required>
                     <label class="form-check-label" for="exampleRadios1">
                                     Not sure
@@ -83,8 +84,11 @@
 
             </div>
 
-            <div>
-                <label>What do you like most in FCC? &nbsp;</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <label>What do you like most in FCC? &nbsp;</label>
+                </div>
+
                 <select class="form-control" id="dropdown">
                             <optgroup label = "Select an option">
                                     <option>Challenges</option>
@@ -95,9 +99,81 @@
                             </optgroup>
                             
                         </select>
+
+            </div>
+
+            <div>
+                <br>
+                <div>
+                    <lablel>Things that should be improved in the future (Check all that apply):</lablel>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Front-end Projects" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">Front-end Projects</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Back-end Projects" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">Back-end Projects</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Data Visualization" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">Data Visualization</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Challenges" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1"> Challenges</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Open Source Community" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">Open Source Community</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Gitter help rooms" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1"> Gitter help rooms</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Videos" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">Videos</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="City Meetups" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">City Meetups</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Wiki" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">Wiki</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Forum" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">Forum</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Additional Courses" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">Additional Courses</label>
+                </div>
                 <br>
             </div>
 
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <label>Any Comments or Suggestions? &nbsp;</label>
+                </div>
+                <textarea class="form-control" aria-label="With textarea" placeholder="Enter your comment here ..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
 
 
         </form>
