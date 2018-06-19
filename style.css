@@ -6,3 +6,27 @@
     display: flex;
     align-items: center;
 }
+
+#checkbox {
+    margin-left: 5%;
+}
+
+.box-container {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    height: 950px;
+    width: 900px;
+    margin-left: 20%;
+}
+
+#name,
+#email,
+#dropdown {
+    flex-basis: 51%;
+}
+
+#age {
+    flex-basis: 50%;
+}
