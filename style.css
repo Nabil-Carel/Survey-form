@@ -21,12 +21,13 @@
     margin-left: 20%;
 }
 
-#name,
-#email,
-#dropdown {
+#name-input,
+#email-input,
+#dropdown-selector,
+#comment-input {
     flex-basis: 51%;
 }
 
-#age {
+#age-input {
     flex-basis: 50%;
 }

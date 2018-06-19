@@ -25,18 +25,18 @@
 
                 <div class="input-group mb-3">
 
-                    <div class="input-group mb-3" id="name">
+                    <div class="input-group mb-3" id="name-input">
                         <label id="name-label">*Name: &nbsp;</label>
                         <input type="text" id="name" class="form-control ." id="basic-url" aria-describedby="basic-addon3" placeholder="Enter your name" required>
 
                     </div>
 
-                    <div class="input-group mb-3" id="email">
+                    <div class="input-group mb-3" id="email-input">
                         <label id="email-label">*Email: &nbsp;</label>
                         <input type="email" class="form-control " id="email" aria-describedby="basic-addon3" placeholder="Enter your email" required>
                     </div>
 
-                    <div class="input-group mb-3" id="age">
+                    <div class="input-group mb-3" id="age-input">
                         <label id="number-label">*Age: &nbsp;</label>
                         <input type="number" class="form-control " id="number" aria-describedby="basic-addon3" placeholder="Enter your age" max="100" min="0" required>
                     </div>
@@ -47,8 +47,8 @@
                 <div class="input-group">
                     <label>Which option best describes your current role? &nbsp;</label>
 
-                    <div id="dropdown">
-                        <select class="form-control">
+                    <div id="dropdown-selector">
+                        <select class="form-control" id="dropdown">
                                     <optgroup label = "Select an option">
                                             <option>Student</option>
                                             <option>Full time Job</option>
@@ -95,8 +95,8 @@
                         <label>What do you like most in FCC? &nbsp;</label>
                     </div>
 
-                    <div id="dropdown">
-                        <select class="form-control">
+                    <div id="dropdown-selector">
+                        <select class="form-control" id="dropdown">
                                     <optgroup label = "Select an option">
                                             <option>Challenges</option>
                                             <option>Projects</option>
@@ -182,10 +182,17 @@
                     <div class="input-group-prepend">
                         <label>Any Comments or Suggestions? &nbsp;</label>
                     </div>
-                    <textarea class="form-control" aria-label="With textarea" placeholder="Enter your comment here ..."></textarea>
+
+                    <div id="comment-input">
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Enter your comment here ..."></textarea>
+                    </div>
+
                 </div>
 
-                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                <div>
+                    <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                </div>
+
 
 
             </form>
