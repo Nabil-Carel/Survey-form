@@ -2,32 +2,46 @@
     margin-left: 9px;
 }
 
-#submit {
-    display: flex;
-    align-items: center;
-}
-
 #checkbox {
     margin-left: 5%;
 }
 
 .box-container {
-    background-color: blue;
+    background-color: white;
     display: flex;
     flex-direction: column;
     flex-basis: 20%;
-    height: 950px;
+    height: 970px;
     width: 900px;
     margin-left: 20%;
+    justify-content: center;
+    align-items: center;
 }
 
 #name-input,
 #email-input,
+#age-input,
 #dropdown-selector,
 #comment-input {
     flex-basis: 51%;
 }
 
-#age-input {
-    flex-basis: 50%;
+#submitButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: dodgerblue;
+}
+
+#description {
+    font-style: italic;
 }
